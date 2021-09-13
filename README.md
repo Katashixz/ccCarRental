@@ -8,4 +8,8 @@ CC租车系统
 <br><br>
 `编译软件：IntelliJ IDEA 2021.2`<br>
 `使用插件：JFormDesigner`<br>
+<<<<<<< HEAD
 `数据库软件：Navicat for MySQL`<br>
+=======
+`数据库软件：Navicat for MySQL`<br>
+>>>>>>> a7c0699a75c18ab9a535c27ad6d6d10e60b079f4
