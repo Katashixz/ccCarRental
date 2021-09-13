@@ -1,0 +1,135 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 30
+			"vgap": 20
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 400, 300 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/static/image/car2.png" )
+			"title": "Login"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel2"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel3"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel4"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"vgap": 20
+				"hgap": 20
+			} ) {
+				name: "center"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "LoginLable"
+					"text": "登录"
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 3
+					"vgap": 30
+				} ) {
+					name: "panel5"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "用户名"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/user.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "密码"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/password2.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "用户类型"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/user-group.png" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 3
+					"vgap": 30
+					"hgap": 30
+				} ) {
+					name: "panel6"
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "LoginField"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField1"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "TypeSelect"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "客户"
+							addElement( "客户" )
+							addElement( "员工" )
+							addElement( "管理员" )
+						}
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"hgap": 30
+				} ) {
+					name: "panel7"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "RegisterButton"
+						"text": "用户注册"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "RegisterButtonMouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "LoginButton"
+						"text": "登录"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "LoginButtonMouseClicked", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "LoginButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "ExitButton"
+						"text": "退出"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ExitButtonMouseClicked", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 435, 365 )
+		} )
+	}
+}

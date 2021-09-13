@@ -1,0 +1,301 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 20
+			"vgap": 10
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 700, 600 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/static/image/admin.png" )
+			"title": "CarRentalInfoCheck"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "North"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "West"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "East"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"vgap": 10
+				"hgap": 150
+			} ) {
+				name: "South"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel22"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel23"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "East"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel24"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel25"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"hgap": 50
+				} ) {
+					name: "panel26"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "BackToMain"
+						"text": "返回"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/back_android.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "BackToMainActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "Center"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "CarInfoSearch"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "—————————————————————————查询条件————————————————————————"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "North"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "  ————————————————————————————————————————————————————"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "South"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 4
+						"rows": 3
+						"vgap": 5
+					} ) {
+						name: "panel3"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "Brand"
+							"text": "品牌"
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "BrandSelect"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "全部"
+								addElement( "全部" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "City"
+							"text": "取车城市"
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "CitySelect"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "全部"
+								addElement( "全部" )
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CitySelectActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "Type"
+							"text": "车辆类别"
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "TypeSelect"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "全部"
+								addElement( "全部" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "Point"
+							"text": "取车网点"
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "PointSelect"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "全部"
+								addElement( "全部" )
+							}
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "State"
+							"text": "车辆状态"
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "StateSelect"
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "全部"
+								addElement( "全部" )
+								addElement( "空闲" )
+								addElement( "在途" )
+							}
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+							"hgap": 20
+						} ) {
+							name: "panel8"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+								name: "panel10"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "North"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+								name: "panel11"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "West"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+								name: "panel12"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "East"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+								name: "panel13"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "South"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+							"hgap": 20
+						} ) {
+							name: "panel5"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel1"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "West"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel2"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "North"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel6"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "East"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel7"
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "South"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "SearchButton"
+								"text": "查询"
+								"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/search.png" )
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SearchButtonActionPerformed", true ) )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "panel4"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+						name: "panel9"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "South"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "SCBar"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "TBCarInfo"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+							}, new java.util.Vector {
+								add( "编号" )
+								add( "牌照" )
+								add( "车辆类别" )
+								add( "品牌" )
+								add( "型号名称" )
+								add( "价格" )
+								add( "被租次数" )
+								add( "获取利润" )
+								add( "状态" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( false )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( false )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "TBCarInfoMouseClicked", true ) )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 720, 555 )
+		} )
+	}
+}

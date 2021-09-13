@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/control/UserManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/itf/IUserManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ui/FrmLogin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ui/FrmMain.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ui/Login.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ui/Register.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/BusinessException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/DBUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/DbException.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

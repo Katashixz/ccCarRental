@@ -1,0 +1,154 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 60
+			"vgap": 20
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 400, 280 )
+			"title": "UserInfoCheck"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/static/image/car2.png" )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "North"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "West"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "East"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"hgap": 80
+				"vgap": 20
+			} ) {
+				name: "South"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel2"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel4"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "East"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel5"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel6"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Back"
+						"text": "返回"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "Center"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 6
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbUserName"
+						"text": "用户名"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/user.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbSex"
+						"text": "性别"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/sex.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbPhoneNum"
+						"text": "电话号码"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/phone-number.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbEmail"
+						"text": "邮箱"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/185078 - email mail streamline.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbCity"
+						"text": "所在城市"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/city.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbRegisterTime"
+						"text": "注册时间"
+						"horizontalAlignment": 2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/time.png" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"rows": 6
+				} ) {
+					name: "panel3"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "txtUserName"
+						"text": "text"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "txtSex"
+						"text": "text"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "txtPhoneNum"
+						"text": "text"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "txtEmail"
+						"text": "text"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "txtCity"
+						"text": "text"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "txtRegisterTime"
+						"text": "text"
+						"horizontalAlignment": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

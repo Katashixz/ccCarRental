@@ -1,0 +1,90 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "WorkerMain"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/static/image/office-worker.png" )
+			"minimumSize": new java.awt.Dimension( 600, 400 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "North"
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar1"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "PersonalCenter"
+						"text": "员工中心"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "LogOut"
+							"text": "注销"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/log-out.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "LogOutActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "Exit"
+							"text": "退出"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/Exit.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ExitActionPerformed", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "CouponCenter"
+						"text": "优惠券中心"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CouponManagerActionPerformed", true ) )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "CouponManager"
+							"text": "优惠券管理"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/coupon (1).png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CouponManagerActionPerformed", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "CarInfoMCenter"
+						"text": "车辆中心"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "CarManager"
+							"text": "报废车辆"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/rubbish bin.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CarManagerActionPerformed", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "West"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "East"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "South"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "Center"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "F:\\大学\\短学期\\2021\\资源\\car.png" )
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

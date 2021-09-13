@@ -1,0 +1,246 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 10
+			"vgap": 10
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 600, 400 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/static/image/car2.png" )
+			"title": "Order"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "North"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "West"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"hgap": 40
+				"vgap": 20
+			} ) {
+				name: "South"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 3
+					"hgap": 40
+				} ) {
+					name: "panel12"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "BackToCarInfo"
+						"text": "返回"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/back_android.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "BackToCarInfoActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "ReloadOrder"
+						"text": "刷新"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/refresh.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ReloadOrderActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "OrderConfirm"
+						"text": "完成订单"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/static/image/完成.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "OrderConfirmActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel9"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel10"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "East"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel11"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "East"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"hgap": 20
+				"vgap": 10
+			} ) {
+				name: "Center"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "还车订单"
+					"horizontalTextPosition": 2
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel5"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel6"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "West"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panel7"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "North"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel2"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel3"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "East"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"rows": 13
+					"vgap": 10
+				} ) {
+					name: "panel4"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OUserName"
+						"text": "用户名"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TUserName"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OLicense"
+						"text": "车辆牌照"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TLicense"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OGetTime"
+						"text": "取车时间"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TGetTime"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ORtnTime"
+						"text": "还车时间"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TRtnTime"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OGetPoint"
+						"horizontalAlignment": 0
+						"text": "取车网点"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "SGetPoint"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ORtnPoint"
+						"text": "还车网点"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "SRtnPoint"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OCartype"
+						"text": "车辆类别"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TCartype"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ODescription"
+						"text": "类型简介"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TDescription"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OBrand_Model"
+						"text": "品牌-型号"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TBrand_Model"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OOPrice"
+						"text": "原价"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TOPrice"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ODiscount"
+						"text": "折扣"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TDiscount"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OCoupon"
+						"text": "优惠券"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "TCouponSelect"
+						"preferredSize": new java.awt.Dimension( 84, 30 )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "不使用优惠券"
+							addElement( "不使用优惠券" )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "OTotalPrice"
+						"text": "折后总价"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "TTotalPrice"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 555, 515 )
+		} )
+	}
+}
