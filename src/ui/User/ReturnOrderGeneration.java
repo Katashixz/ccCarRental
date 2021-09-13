@@ -229,7 +229,12 @@ public class ReturnOrderGeneration extends JFrame {
             curOrder.setRtnPointNum(Integer.valueOf(RtnPoint));
             //间隔时间信息已在计算总价信息时补充
             //补充折后总价信息
-            curOrder.setTotalMoney(Double.valueOf(TTotalPrice.getText()));
+            try{
+                curOrder.setTotalMoney(Double.valueOf(TTotalPrice.getText()));
+            }catch (Exception ex){
+                JOptionPane.showMessageDialog(null,"请点击刷新按钮计算价格！","错误",JOptionPane.ERROR_MESSAGE);
+                return;
+            }
             //修改状态信息
             curOrder.setState("已完成");
             //上传信息(车辆所在网点信息变更、订单信息变更、车辆状态变更)

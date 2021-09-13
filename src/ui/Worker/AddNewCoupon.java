@@ -55,6 +55,9 @@ public class AddNewCoupon extends JFrame {
             if(curDate.compareTo(GetStartDate) >= 0){
                 throw new BusinessException("优惠券时间不能早于现有时间！");
             }
+            if(GetEndDate.compareTo(GetStartDate) < 0){
+                throw new BusinessException("优惠券结束时间不能早于开始时间！");
+            }
             NewCoupon.setStart(GetStartDate);
             NewCoupon.setOver(GetEndDate);
         } catch (Exception ex) {
